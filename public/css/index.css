@@ -1,6 +1,6 @@
 @font-face {
     font-family: Reef;
-    src: url("reef.otf") format("opentype");
+    src: url("fonts/reef.otf") format("opentype");
 }
 body {
     margin: 0;
