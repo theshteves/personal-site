@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Reef;
+    src: url("reef.otf") format("opentype");
+}
+body {
+    margin: 0;
+}
+#background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    width: 120%;
+    opacity: 1;
+}
+#header {
+    position: fixed;
+    top: 100px;
+    width: 10000px;
+    left: 100px;
+    font-family: Reef;
+    margin-bottom: -50px;
+}
+h1 {
+    position: absolute;
+    font-size: 500%;
+    color: #FFFFFF;
+}
+h2 {
+    position: absolute;
+    color: #DDDDDD;
+}
+p {
+    position: absolute;
+    color: #BBBBBB;
+}
