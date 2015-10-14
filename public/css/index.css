@@ -38,13 +38,19 @@ header > h1 {
 }
 #github {
     position: absolute;
-    right: 40%;
+    right: 49%;
+    height: 50px;
+    top: 25px;
+}
+#linkedin {
+    position: absolute;
+    right: 36%;
     height: 50px;
     top: 25px;
 }
 #facebook {
     position: absolute;
-    right: 25%;
+    right: 23%;
     height: 50px;
     top: 25px;
 }
@@ -77,7 +83,7 @@ header > h1 {
 #about > h1 {
     font-family: Reef;
     font-size: 400%;
-    padding-left: 18%;
+    padding-left: 15%;
     margin-bottom: 0px;
 }
 #about > p {
@@ -163,7 +169,7 @@ footer > h6 {
     font-size: 400%;
     color: #263238;
     margin-top: -50px;
-    padding-left: 18%;
+    padding-left: 15%;
 }
 #projects > div {
     position: relative;
