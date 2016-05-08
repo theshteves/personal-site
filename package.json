@@ -1,8 +1,0 @@
-{
-    "name": "theshteves.me",
-    "author": "Steven Kneiser",
-    "dependencies": {
-	"express": "4.12.x",
-	"chalk": "1.0.x"
-    }
-}
