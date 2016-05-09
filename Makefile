@@ -22,8 +22,12 @@ help:
 migrate:
 	python manage.py migrate
 
-#	+ run - build server
-run: update migrate
+#	+ rebuild - rebuild server
+rebuild: update migrate test
+	python manage.py runserver
+
+#	+ run - run server
+run: migrate
 	python manage.py runserver
 
 #	+ test - run tests
