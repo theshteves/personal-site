@@ -13,7 +13,7 @@
 			<canvas id="stage">
 			</canvas>
 		</div>
-		<form role="form" class="search" action="{{ url_for('search', key=key) }}">
+		<form role="form" class="search"> <!--action="{# url_for('search', key=key) #}">-->
         	<i class="fa fa-search"></i>
         	<input type="search" name=key class="form-control searchbar" placeholder="What is it you're looking for?">
         	<input type="submit" class="submit">
