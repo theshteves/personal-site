@@ -1,0 +1,7 @@
+Flask==0.10.1
+gunicorn==19.4.5
+Jinja2==2.8
+requests==2.8.0
+tweepy==3.4.0
+twilio==4.5.0
+virtualenv==13.1.0

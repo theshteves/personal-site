@@ -1,0 +1,208 @@
+@-webkit-keyframes animateCloud {
+    0% {
+	margin-left: -100%;
+    }
+    100% {
+	margin-left: 0;
+    }
+}
+
+@-moz-keyframes animateCloud {
+    0% {
+	margin-left: -100%;
+    }
+    100% {
+	margin-left: 0;
+    }
+}
+
+@keyframes animateCloud {
+    0% {
+	margin-left: -100%;
+    }
+    100% {
+	margin-left: 0;
+    }
+}
+
+@-webkit-keyframes animateGif {
+    0% {
+	margin-left: -3550px;
+    }
+    100% {
+	margin-left: 0;
+    }
+}
+
+@-moz-keyframes animateGif {
+    0% {
+	margin-left: -3550px;
+    }
+    100% {
+	margin-left: 0;
+    }
+}
+
+@keyframes animateGif {
+    0% {
+	margin-left: -3550px;
+    }
+    100% {
+	margin-left: 0;
+    }
+}
+
+@-webkit-keyframes flyl2r{
+    0% {
+    max-width: 0;
+    margin-left: -1000px;
+    }
+    100% {
+    max-width: 200px;
+	margin-left: 1000px;
+    }
+}
+
+@-moz-keyframes flyl2r{
+    0% {
+    max-width: 0;
+    margin-left: -1000px;
+    }
+    100% {
+    max-width: 200px;
+	margin-left: 1000px;
+    }
+}
+
+@keyframes flyl2r{
+    0% {
+    max-width: 0;
+    margin-left: -1000px;
+    }
+    100% {
+    max-width: 200px;
+	margin-left: 1000px;
+    }
+}
+
+@-webkit-keyframes rotate{
+    0% {
+        transform: rotate3d(10,12,7,0);
+    }
+    100% {
+        transform: rotate3d(10,12,7,360deg);
+    }
+}
+
+@-moz-keyframes rotate{
+    0% {
+        transform: rotate3d(10,12,7,0);
+    }
+    100% {
+        transform: rotate3d(10,12,7,360deg);
+    }
+}
+
+@keyframes rotate{
+    0% {
+        transform: rotate3d(10,12,7,0);
+    }
+    100% {
+        transform: rotate3d(10,12,7,360deg);
+    }
+}
+
+/* ANIMATIONS */
+
+.move {
+    -webkit-animation: animateCloud 35s linear infinite alternate;
+    -moz-animation: animateCloud 35s linear infinite alternate;
+    animation: animateCloud 35s linear infinite alternate;
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.gif_move {
+    -webkit-animation: animateGif 25s linear infinite alternate;
+    -moz-animation: animateGif 25s linear infinite alternate;
+    animation: animateGif 25s linear infinite alternate;
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+.l2r {
+    -webkit-animation: flyl2r 35s linear infinite;
+    -moz-animation: flyl2r 35s linear infinite;
+    animation: flyl2r 35s linear infinite;
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+
+    position: absolute;
+    z-index: 2;
+}
+
+body {
+    font-family: sans-serif;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+    overflow: hidden;
+}
+
+.cornerBox {
+    -webkit-animation: rotate 5s linear infinite alternate;
+    -moz-animation: rotate 5s linear infinite alternate;
+    animation: rotate 5s linear infinite alternate;
+
+    position: absolute;
+    z-index: 20;
+}
+    #ur {
+        right: 0;
+    }
+    #ll {
+        bottom: 0;
+    }
+    #lr {
+        bottom: 0;
+        right: 0;
+    }
+
+.background-wrapper {
+    height: 100%;
+    width: 200%;
+    display: flex;
+    justify-content: flex-end;
+}
+    .background {
+    	position: relative;
+    	height: 110%;
+        z-index: 10;
+        margin-top: -95px;
+    }
+
+    .left {
+        margin-left: -100%;
+    }
+
+.title {
+    z-index: 30;
+    position: relative;
+    text-align: center;
+}
+
+/* GIF Styles */
+.gif-wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 50;
+    margin-top: -40%;
+}
