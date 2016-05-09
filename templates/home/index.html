@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -9,21 +10,21 @@
     <meta name="og:image" content="">
     <meta name="og:description" content="Check out some of my cool engineering projects!">
     <title>Steven Kneiser</title>
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="./css/home_index.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/home_clouds.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/home_words.css"/>
+	<link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home_index.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home_clouds.css' %}"/>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home_words.css' %}"/>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/github-repo-widget/e23d85ab8f/jquery.githubRepoWidget.min.js"></script>
-    <!--<script type="text/javascript" src="./js/index.js"></script> -->
+	<!--<script type="text/javascript" src="{% static 'js/home_index.js' %}"></script> -->
   </head>
 
   <body>
     <div id="load-page"></div>
 
     <div id="landing-page">
-      <img src="./img/background2.jpg">
+		<img src="{% static 'img/background2.jpg' %}">
       <header>
 	<h1 class="rw-words">
 	  <span>Steven</span>
@@ -34,16 +35,16 @@
 	  <span>Kneiser</span>
 	</h1>
 	<a href="https://github.com/theshteves">
-	  <img class="icon hover" id="github" src="./img/github.png">
+		<img class="icon hover" id="github" src="{% static 'img/github.png' %}">
 	</a>
 	<a href="https://www.linkedin.com/in/stevenkneiser">
-	  <img class="icon hover" id="linkedin" src="./img/linkedin.png">
+		<img class="icon hover" id="linkedin" src="{% static 'img/linkedin.png' %}">
 	</a>
 	<a href="https://www.facebook.com/stevenkneiser">
-	  <img class="icon hover" id="facebook" src="./img/facebook.png">
+		<img class="icon hover" id="facebook" src="{% static 'img/facebook.png' %}">
 	</a>
 	<a href="https://twitter.com/theshteves">
-	  <img class="icon hover" id="twitter" src="./img/twitter.png">
+		<img class="icon hover" id="twitter" src="{% static 'img/twitter.png' %}">
 	</a>
       </header>
       <div id="background-wrap">
@@ -64,7 +65,7 @@
 
     <div id="about">
       <h1>Meet the Man</h1>
-      <img src="./img/steven.jpeg">
+	  <img src="{% static 'img/steven.jpeg' %}">
       <p>Hey, you!  Thanks for checking out the site.  The name's Steven Kneiser and I invest my free time in side-projects both out of an ambition to become a true master of my craft and to satisfy that deeply rooted desire any engineer has to pull back the curtain and see the clockwork.  Follow any of the links around to get a feel for what I've been working on recently.</p>
       <p>...and hey, don't be afraid to <a href="mailto:kneisers@msu.edu">say hi!</a></p>
     </div>
@@ -80,16 +81,16 @@
 	  <span>Kneiser</span>
 	</h1>
 	<a href="https://github.com/theshteves">
-	  <img class="icon hover" id="github" src="./img/github.png">
+		<img class="icon hover" id="github" src="{% static 'img/github.png' %}">
 	</a>
 	<a href="https://www.linkedin.com/in/stevenkneiser">
-	  <img class="icon hover" id="linkedin" src="./img/linkedin.png">
+		<img class="icon hover" id="linkedin" src="{% static 'img/linkedin.png' %}">
 	</a>
 	<a href="https://www.facebook.com/stevenkneiser">
-	  <img class="icon hover" id="facebook" src="./img/facebook.png">
+		<img class="icon hover" id="facebook" src="{% static 'img/facebook.png' %}">
 	</a>
 	<a href="https://twitter.com/theshteves">
-	  <img class="icon hover" id="twitter" src="./img/twitter.png">
+		<img class="icon hover" id="twitter" src="{% static 'img/twitter.png' %}">
 	</a>
       </header>
     </div>
@@ -105,7 +106,7 @@
       <div class="project">
 	<a href="https://github.com/theshteves/soundboard">
 	  <div class="project-name hover">
-	    <img src="./img/repo.png">
+	  <img src="{% static 'img/repo.png' %}">
 	    <h1>soundboard</h1>
 	  </div>
 	</a>
@@ -114,7 +115,7 @@
       <div class="project">
 	<a href="https://github.com/theshteves/myo-smash">
 	  <div class="project-name hover">
-	    <img src="./img/repo.png">
+	  <img src="{% static 'img/repo.png' %}">
 	    <h1>myo-smash</h1>
 	  </div>
 	</a>
@@ -123,7 +124,7 @@
       <div class="project">
 	<a href="https://github.com/theshteves/TI84-engine">
 	  <div class="project-name hover">
-	    <img src="./img/repo.png">
+	  <img src="{% static 'img/repo.png' %}">
 	    <h1>TI84-engine</h1>
 	  </div>
 	</a>
