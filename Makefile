@@ -20,6 +20,7 @@ help:
 
 #	+ migrate - update database schema
 migrate:
+	python manage.py makemigrations
 	python manage.py migrate
 
 #	+ rebuild - rebuild server
