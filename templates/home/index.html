@@ -96,12 +96,17 @@
     </div>
 
     <div id="projects">
-      <h1>Recent Projects</h1>
+      <h1>Trending Projects</h1>
+	  {% for proj in projects %}
+	  <div class="github-widget" data-repo="{{ proj.name }}"></div>
+	  {% endfor %}
+	  <!--
       <div class="github-widget" data-repo="theshteves/tweet-the-wolf"></div>
       <div class="github-widget" data-repo="theshteves/theshteves.github.io"></div>
       <div class="github-widget" data-repo="newtonjain/hacktheplanet"></div>
       <div class="github-widget" data-repo="theshteves/randall-bot"></div>
       <div class="github-widget" data-repo="radding/CardTracker"></div>
+	  -->
       <!--
       <div class="project">
 	<a href="https://github.com/theshteves/soundboard">
