@@ -10,6 +10,7 @@ class Project(models.Model):
     #link = models.CharField(max_length=200)
 
 # Populate Project DB
+"""
 projects = requests.get("https://api.github.com/users/theshteves/repos")
 projects = projects.text.encode("ascii", "ignore")
 projects = json.loads(projects)
@@ -20,5 +21,6 @@ for x in popular:
         Project.objects.get(name=x)
     except Project.DoesNotExist:
         Project.objects.create(name=x)
+"""
 
 #[Project.objects.create(name=x) for x in popular if x not in Project.objects.all()]

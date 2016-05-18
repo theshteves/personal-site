@@ -14,7 +14,7 @@ class TestCase1(TestCase):
         self.found_js = finders.find("js/home_index.js")
 
     def test_home_index(self):
-        self.assertEqual(self.response.status_code, 200)
+        self.assertIn(self.response.status_code, range(200,300))
         self.assertEqual(not self.found_css, False)
         self.assertEqual(not self.found_img, False)
         self.assertEqual(not self.found_js, False)
@@ -26,4 +26,7 @@ class TestCase2(TestCase):
         self.response = requests.get("https://api.github.com/users/theshteves/repos")
 
     def test_github_request(self):
+        print
+        print(self.response.text)
+        print
         self.assertEqual(self.response.status_code, 200)
